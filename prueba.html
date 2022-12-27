@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utp-8">
+        <meta name="viewport" content="width=divice-width">
+        <title>Encriptador</title>
+    </head>
+    <body>
+        <input class="mytext" placeholder="ingrese su texto aqui"/>
+        <button class="boton_1" onclick="encriptador()">Encriptar</button>
+        <button class="boton_2">Desencriptar</button> 
+        <p>hola mundo</p>
+        <script type="text/javascript">
+            const inputTexto = document.querySelector(".mytext")
+            
+            function encriptador () {
+                var texto = inputTexto.value
+
+                texto = texto.replaceAll("e","enter");
+                texto = texto.replaceAll("i","imes");
+                texto = texto.replaceAll("a","ai");
+                texto = texto.replaceAll("o","ober");
+                texto = texto.replaceAll("u","ufat");
+                var imprimir = document.querySelector("p").textContent = texto;
+                return texto;
+            }
+
+            
+        </script>
+    </body>
+
+</html>
