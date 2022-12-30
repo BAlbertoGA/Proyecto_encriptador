@@ -32,5 +32,5 @@ function desencriptador (){
 function copy() {
     let copyText = document.querySelector(".salida_texto");
     copyText.select();
-    document.execCommand(copy);
+    return document.execCommand("copy");
   }
